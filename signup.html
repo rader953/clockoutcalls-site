@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up | Clockout Calls</title>
+  <meta name="description" content="Start a Clockout Calls pilot for your home-service business.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Clockout<span>Calls</span></a>
+    </div>
+  </header>
+
+  <main class="doc">
+    <div class="wrap narrow">
+      <h1>Start your pilot</h1>
+      <p class="updated">Tell us about your shop. We'll reach out within one business day to set up your assistant.</p>
+
+      <form class="form" action="mailto:support@clockoutcalls.com" method="POST" enctype="text/plain">
+        <div class="field">
+          <label for="business">Business name</label>
+          <input id="business" name="business_name" type="text" autocomplete="organization" required>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="contact_name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="trade">Trade</label>
+            <select id="trade" name="trade" required>
+              <option value="">Choose one</option>
+              <option>HVAC</option>
+              <option>Plumbing</option>
+              <option>Garage doors</option>
+              <option>Roofing</option>
+              <option>Electrical</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="mobile">Mobile number</label>
+            <input id="mobile" name="mobile" type="tel" autocomplete="tel" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="hours">Business hours <span class="hint">(e.g. M–F 8–5)</span></label>
+            <input id="hours" name="business_hours" type="text">
+          </div>
+          <div class="field">
+            <label for="area">Service area</label>
+            <input id="area" name="service_area" type="text">
+          </div>
+        </div>
+        <div class="field">
+          <label for="notes">Anything we should know? <span class="hint">(optional)</span></label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </div>
+
+        <label class="consent" for="sms-consent">
+          <input id="sms-consent" name="sms_consent" type="checkbox" value="yes">
+          <span>Text me call summaries from Clockout Calls at the mobile number above. Message frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to cancel. Consent is optional and not a condition of service; without it, summaries come by email. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms</a>.</span>
+        </label>
+
+        <button class="button" type="submit">Send my details</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Clockout Calls</span>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:support@clockoutcalls.com">support@clockoutcalls.com</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
